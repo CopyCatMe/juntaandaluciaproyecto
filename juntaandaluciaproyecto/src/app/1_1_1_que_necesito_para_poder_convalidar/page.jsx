@@ -1,3 +1,4 @@
+import Titulo from "@/components/titulo";
 import Image from "next/image";
 
 export const metadata = {
@@ -8,9 +9,7 @@ export const metadata = {
 export default function Home() {
   return (
     <div>
-      <h1 className="text-3xl font-bold underline text-center text-blue-500 py-10 text-5xl font-bold"> 
-      Pagina Principal
-      </h1>
+      <Titulo>¿Que necesito para poder convalidar?</Titulo>
     </div>
   );
 }

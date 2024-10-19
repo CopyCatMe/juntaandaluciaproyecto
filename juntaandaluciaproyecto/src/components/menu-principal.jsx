@@ -41,8 +41,8 @@ const classLink = "block bg-blue-50 mb-1 rounded-2xl"
 
 function MenuPrincipal() {
     return (
-        <nav className="bg-blue-500 p-4 text-white">
-            <details className="rounded-2xl shadow-lg p-2">
+        <nav className="bg-blue-500 p-3 text-white">
+            <details className="rounded-xl shadow-lg p-5 w-80">
                 <summary className="font-bold">Menu</summary>
                 <ul className="divide-y divide-gray-300">
                     {menu.map((item, index) => (
