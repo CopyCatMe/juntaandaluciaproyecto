@@ -18,7 +18,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased flex h-screen`}>
-          <aside>
+          <aside class="shrink-0">
           <MenuPrincipal/>
 
           </aside>
