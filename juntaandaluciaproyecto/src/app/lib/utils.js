@@ -1,7 +1,8 @@
 
 const menu = [
+    {        title: "Información general: convalidaciones, exenciones y títulos" },   
     {
-        title: "1.- Información general: convalidaciones, exenciones y títulos",
+        title: "1.- Solicitud de convalidaciones",
         children: [
             {
                 title: "1.1.- Convalidaciones en FP",
