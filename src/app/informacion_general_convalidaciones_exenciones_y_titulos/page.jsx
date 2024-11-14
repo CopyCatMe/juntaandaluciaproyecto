@@ -16,7 +16,7 @@ export default function Home() {
       <p className="mb-4 text-justify">
         A continuación, se muestra información tutorial que esperamos que te sea de utilidad.
       </p>
-      <Image className="py-5 float-right" 
+      <Image className="py-5 mx-auto float-right" 
         src="https://www.juntadeandalucia.es/educacion/gestionafp/documentacion/Informacion_tutorial/tutor-and-student.png"
         width={150}
         height={100}
