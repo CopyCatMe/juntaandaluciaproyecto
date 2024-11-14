@@ -13,12 +13,12 @@ const linkClasses = "block text-blue-600 hover:text-blue-800 flex items-center w
 
 function renderMenuItems(items, menuOpen) {
     return (
-        <ul className={`${ulClasses} ${menuOpen ? 'opacity-100' : 'opacity-0'}`}>
+        <ul className={`${ulClasses} ${menuOpen ? 'opacity-100 scale-y-100' : 'opacity-0 scale-y-0'}`}>
             {items.map((item, index) => (
                 <li
                     key={index}
                     className={`${liClasses} ${menuOpen ? 'opacity-100 scale-y-100 h-auto' : 'opacity-0 scale-y-0 h-0'}`}
-                    style={{ transitionDelay: `${index * 100}ms` }}  // Incremento de retardo
+                    style={{ transitionDelay: `${index * 100}ms` }}
                 >
                     {item.children ? (
                         <details className="group">
@@ -90,7 +90,7 @@ function MenuPrincipal() {
             style={{ height: '50%' }}
         >
             <nav
-                className={`${menuPrincipalClasses} ${scrolling ? 'transform -translate-x-full opacity-0' : 'opacity-100'} md:transform-none md:h-auto w-full lg:overflow-y-auto`}
+                className={`${menuPrincipalClasses} ${scrolling  ? ' transform -translate-x-full opacity-0' : 'opacity-100'} md:transform-none md:h-auto w-full lg:overflow-y-auto` }
                 style={{
                     maxHeight: windowWidth >= 1024 ? '100vh' : 'auto',
                     maxWidth: menuOpen
@@ -102,10 +102,11 @@ function MenuPrincipal() {
                     className="p-4 flex w-full justify-between items-center transition-all duration-300"
                     onClick={() => setMenuOpen(!menuOpen)}
                 >
-                    {menuOpen ?
-                        <XMarkIcon className="h-6 w-6 hamburguesa-icon transform transition-transform duration-300 rotate-180" /> :
+                    {menuOpen ? (
+                        <XMarkIcon className="h-6 w-6 hamburguesa-icon transform transition-transform duration-300 rotate-180" />
+                    ) : (
                         <Bars3Icon className="h-6 w-6 hamburguesa-icon transform transition-transform duration-300 rotate-0" />
-                    }
+                    )}
                 </button>
 
                 <div className={`transition-all duration-500 ease-in-out ${menuOpen ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-full'} lg:opacity-100 lg:translate-x-0`}>

@@ -16,12 +16,12 @@ export default function Home() {
       <p className="mb-4 text-justify">
         A continuación, se muestra información tutorial que esperamos que te sea de utilidad.
       </p>
-      <Image className="py-5 lef"
+      <Image className="py-5 float-right" 
         src="https://www.juntadeandalucia.es/educacion/gestionafp/documentacion/Informacion_tutorial/tutor-and-student.png"
-        width={200}
+        width={150}
         height={100}
         alt="" />
-      <table class="min-w-full border border-gray-200 bg-white border-collapse">
+      <table class="border border-gray-200 bg-white border-collapse mt-10">
         <tbody>
           <tr class="text-gray-800 text-sm leading-tight m-1 ">
             <th class="bg-blue-200 py-3 px-6 text-left font-bold border border-gray-200">Elaborado por:</th>
