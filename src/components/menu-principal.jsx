@@ -87,17 +87,17 @@ function MenuPrincipal() {
     return (
         <aside
             className={`${menuOpen ? "shrink-0 lg:w-1/4 w-full lg:max-w-[360px] overflow-y-auto" : ""}`}
-            style={{ height: '50%' }}
+            style={{ maxHeight: '35vh' }}
         >
             <nav
-                className={`${menuPrincipalClasses} ${scrolling  ? ' transform -translate-x-full opacity-0' : 'opacity-100'} md:transform-none md:h-auto w-full lg:overflow-y-auto` }
+                className={`${menuPrincipalClasses} ${scrolling ? ' transform -translate-x-full opacity-0' : 'opacity-100'} md:transform-none md:h-auto w-full lg:overflow-y-auto`}
                 style={{
                     maxHeight: windowWidth >= 1024 ? '100vh' : 'auto',
                     maxWidth: menuOpen
-                        ? `${windowWidth >= 1024 ? '360px' : '100%'}` 
+                        ? `${windowWidth >= 1024 ? '360px' : '100%'}`
                         : `${windowWidth >= 1024 ? '360px' : '100%'}`,
-                }}
-            >
+                }}>
+                    
                 <button
                     className="p-4 flex w-full justify-between items-center transition-all duration-300"
                     onClick={() => setMenuOpen(!menuOpen)}

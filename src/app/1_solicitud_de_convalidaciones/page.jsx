@@ -1,16 +1,29 @@
+import Titulo from "@/components/titulo";
 import Image from "next/image";
 
+
 export const metadata = {
-  title: "Junta de Andalucia",
-  description: "Creado por CopyCatMe",
+  title: "1.- Solicitud de convalidaciones"
 };
 
 export default function Home() {
   return (
-    <div>
-      <h1 className="text-3xl font-bold underline text-center text-blue-500 py-10 text-5xl font-bold"> 
-      Pagina Principal
-      </h1>
+
+    <div className="w-full my-auto h-full mx-auto px-4 lg:w-10/12">
+      <Titulo>  {metadata.title} </Titulo>
+      <div className=" px-4 bg-blue-200 p-10 rounded-3xl shadow-lg shadow-slate-300 my-10 text-black text-justify">
+
+        <p className=" mb-4 text-justify">
+        Aquí encontrarás información acerca de cómo solicitar la convalidación de un módulo profesional y la exención del módulo de Formación en Centros de Trabajo.
+        </p>
+
+        <Image className="py-5 mx-auto block"
+          src="https://www.juntadeandalucia.es/educacion/gestionafp/documentacion/Informacion_tutorial/scales-308063_1280.png"
+          width={150}
+          height={100}
+          alt=""
+        />
+      </div>
     </div>
   );
 }
