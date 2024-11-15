@@ -2,20 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-<<<<<<< HEAD
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-=======
 /* Definir variables globales para los colores según el tema */
 :root {
   --background-light: #ffffff; /* Fondo claro */
@@ -44,20 +30,12 @@
 }
 
 /* Estilos base */
->>>>>>> a006c7dfdb5dc8d911a809511cc598b7c4401f6a
 body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
 
-<<<<<<< HEAD
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
-}
-=======
 .hamburguesa-icon {
   color: var(--hamburger-icon);
 }
@@ -72,4 +50,3 @@ nav {
   scrollbar-width: none;
 }
 
->>>>>>> a006c7dfdb5dc8d911a809511cc598b7c4401f6a
