@@ -9,6 +9,10 @@
     "lint": "next lint"
   },
   "dependencies": {
+<<<<<<< HEAD
+=======
+    "@heroicons/react": "^2.1.5",
+>>>>>>> a006c7dfdb5dc8d911a809511cc598b7c4401f6a
     "lucide-react": "^0.453.0",
     "next": "14.2.15",
     "react": "^18",

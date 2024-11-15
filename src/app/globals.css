@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+<<<<<<< HEAD
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -14,14 +15,61 @@
   }
 }
 
+=======
+/* Definir variables globales para los colores según el tema */
+:root {
+  --background-light: #ffffff; /* Fondo claro */
+  --foreground-light: #171717; /* Texto oscuro */
+  --background-dark: #0a0a0a; /* Fondo oscuro */
+  --foreground-dark: #ededed; /* Texto claro */
+  --hamburger-icon-light: #171717; /* Color negro para el tema claro */
+  --hamburger-icon-dark: #ffffff; /* Color blanco para el tema oscuro */
+}
+
+/* Aplicar esquema de color según la preferencia del sistema del usuario */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: var(--background-dark);
+    --foreground: var(--foreground-dark);
+    --hamburger-icon: var(--hamburger-icon-dark);
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --background: var(--background-light);
+    --foreground: var(--foreground-light);
+    --hamburger-icon: var(--hamburger-icon-light);
+  }
+}
+
+/* Estilos base */
+>>>>>>> a006c7dfdb5dc8d911a809511cc598b7c4401f6a
 body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
 
+<<<<<<< HEAD
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
 }
+=======
+.hamburguesa-icon {
+  color: var(--hamburger-icon);
+}
+
+nav::-webkit-scrollbar {
+  width: 0; 
+  height: 0;
+}
+
+nav {
+  -ms-overflow-style: none;  
+  scrollbar-width: none;
+}
+
+>>>>>>> a006c7dfdb5dc8d911a809511cc598b7c4401f6a
