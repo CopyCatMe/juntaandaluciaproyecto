@@ -22,7 +22,7 @@ export default function RootLayout({ children }) {
 
           <MenuPrincipal />
 
-        <main className=" h-full">
+        <main className=" flex-1 h-full">
           {children}
         </main>
       </body>
