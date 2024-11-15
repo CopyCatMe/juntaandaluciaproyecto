@@ -1,27 +1,15 @@
 import Image from "next/image";
-<<<<<<< HEAD
-
-export const metadata = {
-  title: "Junta de Andalucia",
-=======
 import Titulo from "@/components/titulo";
 import ItemLista from "@/components/item-lista";
 
 
 export const metadata = {
   title: "2.1.- Solicitud",
->>>>>>> a006c7dfdb5dc8d911a809511cc598b7c4401f6a
   description: "Creado por CopyCatMe",
 };
 
 export default function Home() {
   return (
-<<<<<<< HEAD
-    <div>
-      <h1 className="text-3xl font-bold underline text-center text-blue-500 py-10 text-5xl font-bold"> 
-      Pagina Principal
-      </h1>
-=======
     <div className="mx-auto px-4 lg:w-11/12">
       <Titulo>  {metadata.title} </Titulo>
 
@@ -71,7 +59,6 @@ export default function Home() {
           </p>
         </div>
       </div>
->>>>>>> a006c7dfdb5dc8d911a809511cc598b7c4401f6a
     </div>
   );
 }

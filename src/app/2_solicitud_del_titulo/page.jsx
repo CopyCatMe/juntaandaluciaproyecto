@@ -1,30 +1,13 @@
-<<<<<<< HEAD
-import Image from "next/image";
-
-export const metadata = {
-  title: "Junta de Andalucia",
-  description: "Creado por CopyCatMe",
-=======
 import Titulo from "@/components/titulo";
 import Image from "next/image";
 
 
 export const metadata = {
   title: "2.- Solicitud del título"
->>>>>>> a006c7dfdb5dc8d911a809511cc598b7c4401f6a
 };
 
 export default function Home() {
   return (
-<<<<<<< HEAD
-    <div>
-      <h1 className="text-3xl font-bold underline text-center text-blue-500 py-10 text-5xl font-bold"> 
-      Pagina Principal
-      </h1>
-    </div>
-  );
-}
-=======
 
     <div className=" mx-auto px-4 lg:w-11/12">
       <Titulo>  {metadata.title} </Titulo>
@@ -44,4 +27,3 @@ export default function Home() {
     </div>
   );
 }
->>>>>>> a006c7dfdb5dc8d911a809511cc598b7c4401f6a
